@@ -25,12 +25,6 @@ function App() {
       className={`min-h-screen transition-colors duration-300 ${
         theme === "dark" ? "bg-[#0a0a0a] text-white" : "bg-[#f5f5f7] text-black"
       }`}
-      style={{
-        backgroundImage: `url(${noiseTexture})`,
-        backgroundSize: "auto",
-        backgroundRepeat: "repeat",
-        backgroundBlendMode: "overlay",
-      }}
     >
       {/* 👇 Botón de cambio de tema */}
       <button
