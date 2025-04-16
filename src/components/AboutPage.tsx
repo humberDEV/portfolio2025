@@ -8,13 +8,16 @@ interface Props {
 export default function AboutPage({ theme }: Props) {
   return (
     <section className="h-screen w-full flex items-center justify-center px-6">
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 items-center">
+      <div
+        className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 items-center"
+        style={{ maxHeight: "calc(100vh - 200px)", overflowY: "auto" }}
+      >
         {/* Profile Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex justify-center"
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="flex justify-center mb-10 md:mb-0"
         >
           <img
             src={profile}
@@ -27,8 +30,8 @@ export default function AboutPage({ theme }: Props) {
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-center md:text-left"
+          transition={{ delay: 0.3, duration: 1.2 }}
+          className=" text-center md:text-left"
         >
           <h2
             className={`text-4xl font-semibold mb-4 ${
@@ -38,14 +41,15 @@ export default function AboutPage({ theme }: Props) {
             About Me
           </h2>
           <p
-            className={`text-lg leading-relaxed mb-6 ${
+            className={`text-md md:text-lg leading-relaxed mb-6 ${
               theme === "dark" ? "text-gray-300" : "text-gray-700"
             }`}
           >
             I'm <span className="font-bold">Humberto</span>, a Full Stack
-            Developer passionate about performance, design, and simplicity. I
-            specialize in building intuitive, elegant, and scalable tech
-            products with a modern, minimalistic mindset.
+            Developer based in Valencia, Spain. I blend design and code to craft
+            fast, elegant and scalable web applications. With a passion for
+            simplicity and modern tools, I’m always exploring new technologies
+            and refining my skills through work or personal projects.
           </p>
 
           <div>
@@ -58,15 +62,15 @@ export default function AboutPage({ theme }: Props) {
             </h3>
             <div className="flex flex-wrap gap-3">
               {[
+                "Vue",
                 "React",
-                "TypeScript",
-                "Next.js",
+                "Next",
                 "Tailwind CSS",
                 "Node.js",
                 "Spring",
                 "PostgreSQL",
                 "Docker",
-                "AWS",
+                "Kubernetes",
                 "Git",
               ].map((tech, i) => (
                 <span

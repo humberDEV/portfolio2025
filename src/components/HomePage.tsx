@@ -15,7 +15,7 @@ export default function HomePage({ theme }: Props) {
       >
         {/* 👇 Gradiente animado en movimiento automático */}
         <motion.h1
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-4"
+          className="text-4xl md:text-7xl font-bold tracking-tight mb-4"
           transition={{
             duration: 10,
             ease: "linear",

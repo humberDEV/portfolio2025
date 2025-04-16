@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ProjectsPage from "./components/ProjectsPage";
 import ContactPage from "./components/ContactPage";
+import noiseTexture from "./assets/noise_texture.jpg";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -25,7 +26,7 @@ function App() {
         theme === "dark" ? "bg-[#0a0a0a] text-white" : "bg-[#f5f5f7] text-black"
       }`}
       style={{
-        backgroundImage: `url('/textures/noise.png')`,
+        backgroundImage: `url(${noiseTexture})`,
         backgroundSize: "auto",
         backgroundRepeat: "repeat",
         backgroundBlendMode: "overlay",
