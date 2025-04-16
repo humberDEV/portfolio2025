@@ -8,10 +8,7 @@ interface Props {
 export default function AboutPage({ theme }: Props) {
   return (
     <section className="h-screen w-full flex items-center justify-center px-6">
-      <div
-        className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 items-center"
-        style={{ maxHeight: "calc(100vh - 200px)", overflowY: "auto" }}
-      >
+      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 items-center">
         {/* Profile Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}

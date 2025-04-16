@@ -56,10 +56,7 @@ const ProjectsPage = ({ theme }: interfaceTheme) => {
       >
         Projects
       </h2>
-      <div
-        className="grid gap-10 md:grid-cols-2 lg:grid-cols-3"
-        style={{ maxHeight: "calc(100vh - 200px)", overflowY: "auto" }}
-      >
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
