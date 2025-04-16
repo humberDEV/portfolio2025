@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profile from "../assets/profile.png";
+import profile from "../assets/profile.jpg";
 
 interface Props {
   theme: "light" | "dark";

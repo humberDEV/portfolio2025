@@ -7,7 +7,6 @@ import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ProjectsPage from "./components/ProjectsPage";
 import ContactPage from "./components/ContactPage";
-import noiseTexture from "./assets/noise_texture.jpg";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
-import profolioUrl from "../assets/profolio.png";
-import pasapalosUrl from "../assets/pasapalos.png";
-import menuPageUrl from "../assets/menupage.png";
+import profolioUrl from "../assets/profolio.jpg";
+import pasapalosUrl from "../assets/pasapalos.jpg";
+import menuPageUrl from "../assets/menupage.jpg";
 
 import interfaceTheme from "./interfaces/interfaceTheme";
 
@@ -56,7 +56,7 @@ const ProjectsPage = ({ theme }: interfaceTheme) => {
       >
         Projects
       </h2>
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
@@ -126,9 +126,9 @@ const ProjectsPage = ({ theme }: interfaceTheme) => {
                     key={i}
                     className={`px-3 py-1 text-xs rounded-full ${
                       theme === "dark"
-                        ? "bg-white/10 text-white"
-                        : "bg-neutral-200 text-neutral-800"
-                    } border border-white/10`}
+                        ? "bg-white/20 text-white"
+                        : "bg-neutral-300 text-neutral-900"
+                    } border border-white/20`}
                   >
                     {tech}
                   </span>
